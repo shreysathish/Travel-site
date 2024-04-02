@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+<!-- Navigation menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="C:\Users\Shreyas\Downloads\New folder\Logo.png" id="logoimage">
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Book</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Package
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">United states</a>
+          <a class="dropdown-item" href="#">India</a>
+          <a class="dropdown-item" href="#">France</a>
+          <a class="dropdown-item" href="#">Germany</a>
+        
+        </li>
+      </ul>
+      <div class="button">
+      <button class="btn-success"data-toggle="modal" data-target="#Registermodel">Register</button> &nbsp;
+      <button class="btn-success" data-toggle="modal" data-target="#loginmodal">Login</button>
+    </div>
+</nav>
+<!-- End of navigation bar -->
+<!-- Hero part -->
+<div class= "jumbotron" id="Hero"> 
+  <div class="container">
+     <h1> Welcome to Holiday Inn </h1>
+  <h2> Visit places- <span id= "changetext"> </span></h2>
+  <p> Special discount to couples for this valentine's week</p>
+  <button class="btn-outline-success">Book Now</button>
+</div>
+</div>
+<!-- end of heropart -->
+
+<!-- right alignment -->
+
+<div class="container mt-4" id="booking">
+  <h1 align="center">Booking form</h1>
+  <div class="row">
+      <img src="C:\Users\Shreyas\Downloads\New folder\booking form.jpg">
+<div class="col-md-2">
+    <div class="card text-center">
+      <div class="card-body text-center">
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Booking Form</title>
+<body>
+    <div class="container">
+        <div class="right-section">
+            <form id="bookingForm" >
+                <label for="whereTo">Where to:</label>
+                <select id="whereTo" name="whereTo">
+                    <option value="sample1">India</option>
+                    <option value="sample2">United states</option>
+                </select>
+<br>
+                <label for="numPersons">How Many Persons:</label><input type="number" id="numPersons" name="numPersons" min="1">
+</br>
+<br>
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" min="2024-02-25">
+              </br>
+              <br>
+
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" min="2024-02-25">
+              </br>
+              <br>
+              <label for="description">Description:</label> <textarea id="description" name="description" rows="5" minlength="50" maxlength="500"></textarea>
+              </br>
+              <br>
+
+                <button type="submit" onclick="validateForm()">Book Now</button>
+              </br>
+            </form>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end of the right alignment -->
+
+<!-- raing -->
+<!-- First row -->
+<div class="container md-4" id="rating">
+
+  <h1 align="center">Package</h1>
+  <div class="row">
+     <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\India.jpg" class="img-fluid">
+              <h3>India</h3>
+              <p> <span id="text-para">Place for Tradition</span></p>
+
+              <div id="Star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+               <h5> <span id="Productprize"> $500 </span> </h5>
+               <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+               <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\Japan.jpg" class="img-fluid">
+              <h3>Japan</h3>
+              <p> <span id="text-para">Place of warroirs</span></p>
+              <div id="Star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <h5> <span id="Productprize"> $400 </span> </h5>
+              <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+               <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\Malaysia.jpg" class="img-fluid">
+              <h3>Malaysia</h3>
+              <p> <span id="text-para">Place with good economics</span></p>
+              <div id="Star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-halfg"></i>
+              </div>
+              <h5> <span id="Productprize"> $600 </span> </h5>
+              <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- End of the 1st row -->
+    <!-- second row -->
+
+    <div class="container" id="rating">
+      <div class="row">
+
+               <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\France.jpg" class="img-fluid">
+              <h3>France</h3>
+              <p> <span id="text-para">Place of love</span></p>
+              <div id="Star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5> <span id="Productprize"> $400 </span> </h5>
+              <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\United_states.jpg" class="img-fluid">
+              <h3>United states</h3>
+              <p> <span id="text-para">Place with good industrial growth</span></p>
+              <div id="Star">
+                <i class="bi bi-sta r-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5> <span id="Productprize"> $800</span> </h5>
+              <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\Dubai.jpg" class="img-fluid">
+              <h3>Dubai</h3>
+              <p> <span id="text-para">Place which is familiar for economic growth</span></p>
+              <div id="Star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5> <span id="Productprize"> $500 </span> </h5>
+              <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+<!-- second row ending -->
+<!-- Third row -->
+<div class="container" id="rating">
+  <div class="row">
+
+               <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\Ireland.jpg" class="img-fluid">
+              <h3>Ireland</h3>
+              <p> <span id="text-para">Place of island</span></p>
+              <div id="Star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <h5> <span id="Productprize"> $200</span> </h5>
+              <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+                       <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\China.jpg" class="img-fluid">
+              <h3>China</h3>
+              <p> <span id="text-para">Place were manufacturing is done in wide range</span></p>
+              <div id="Star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <h5> <span id="Productprize"> $600 </span> </h5>
+              <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+
+                       <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\Australia.jpg" class="img-fluid">
+              <h3>Australia</h3>
+              <p> <span id="text-para">Place of love</span></p>
+              <div id="Star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5> <span id="Productprize"> $100 </span> </h5>
+              <button class="btn-outline-success">Book Now</button>
+            </div>
+          </div>
+        </div>
+<!-- end of the third row -->
+<!-- end of the rating -->
+<!-- login form -->
+<div class="modal" id="loginmodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header"> Login Form </div>
+    <div class="modal-body">
+      
+      <form>
+        <div class="form-group">
+        <input type="email" placeholder="Email ID" class="form-control">
+      </div>
+        <div class="form-group">
+        <input type="Password" placeholder="Password" class="form-control">
+      </div>
+      <div class="form-group">
+      <button type="submit" class="btn-success"> Login </button>
+    </div>
+    <p> Don't have an Account? <a href="#Registermodel" data-toggle="modal"data-toggle="modal"data-dismiss="modal"> Sign Up </a> </p>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<!-- end of the login form -->
+<!-- Register form -->
+
+<div class="modal" id="Registermodel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header"> Register Form </div>
+    <div class="modal-body">
+
+      <form>
+        <div class="form-group">
+        <input type="text" placeholder="Fullname" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email ID" class="form-control">
+      </div>
+        <div class="form-group">
+        <input type="Password" placeholder="Password" class="form-control">
+      </div>
+        <div class="form-group">
+        <input type="Contact" placeholder="Contact No" class="form-control">
+      </div>
+              <div class="form-group">
+        <input type="DOB" placeholder="DOB" class="form-control">
+      </div>
+        <div class="form-group">
+        <input type="Gender" placeholder="Gender" class="form-control">
+      </div>
+      <button type="submit" class="btn-success"> Register </button>
+    </div>
+    <p> Already have an Account? <a href="#loginmodal" data-toggle="modal"data-dismiss="modal"> Sign In </a> </p>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- end of the resgister form -->
+
+<!-- services -->
+
+<div class="container" id="services">
+  <h1 align="center">Services</h1>
+  <div class="row">
+     <div class="col-md-2">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\hotel.jpeg"class="img-fluid">
+              <h3>Affordable hotels</h3>
+            </div>
+          </div>
+        </div>
+
+               <div class="col-md-2">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\food and drinks.jpg" class="img-fluid" id="text">
+              <h3>Food & Drinks</h3>
+            </div>
+          </div>
+        </div>
+
+              
+               <div class="col-md-2">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\Home.png"class="img-fluid">
+              <h3>Home stay & villas</h3>
+            
+            </div>
+          </div>
+        </div>
+
+     <div class="col-md-2">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\Holiday package.png"class="img-fluid">
+              <h3>Holiday package</h3>
+            
+            </div>
+          </div>
+        </div>
+
+     <div class="col-md-2">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\safety information.png"class="img-fluid">
+              <h3>Safety information</h3>
+            
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-2">
+        <div class="card">
+            <div class="card-body text-center">
+              <img src="C:\Users\Shreyas\Downloads\New folder\Insurance.png"class="img-fluid">
+              <h3>Travel Insurance</h3>
+            
+            </div>
+          </div>
+        </div>
+<!-- end of services -->
+
+<!--Gallery-->
+<div class="container my-5" id="Gallery">
+  <h1 align="center">Gallery</h1>
+ <div class="scroll-container">
+  <img src="C:\Users\Shreyas\Downloads\New folder\1.png" alt="1" width="600" height="600" transform: scale (3,4);>
+  <img src="C:\Users\Shreyas\Downloads\New folder\2.png" width="600" height="600">
+  <img src="C:\Users\Shreyas\Downloads\New folder\4.jpeg" width="600" height="600">
+  <img src="C:\Users\Shreyas\Downloads\New folder\5.jpeg" alt="4" width="600" height="600">
+  <img src="C:\Users\Shreyas\Downloads\New folder\3.jpg" alt="5" width="600" height="600">
+ </div>
+</div>
+<!--End of Gallery-->
+
+<!--About us-->
+<div class="container my-2" id="About us">
+<h2 align="center">About us </h2>
+<div class="row">
+  <div class="column">
+     <img src="C:\Users\Shreyas\Downloads\New folder\Main.jpg">
+   </div>
+  <div class="column">
+    <h2 align="center">HOLIDAY IN AS YOU KNOW IT.</h2>
+    <p>Holiday Inn is an American chain of travels based in Atlanta, Georgia and a brand of IHG travels.
+     The chain was founded in 1952 by Kemmons Wilson, who opened the first location in Memphis, Tennessee. The chain was a division of Bass Brewery from 1988-2000, Six Continents from 2000-03, and IHG travels since 2003. It operates travels under the names Holiday Inn, Holiday Inn Express, Holiday Inn Club Vacations, and Holiday Inn Resorts. As at 2018, Holiday Inn has travels at over 1,100 locations.</p>
+    <p>Although originally called "Holiday Inn Crowne Plaza", the Crowne Plaza division was separated from Holiday Inn in 1994 to form a distinctive brand.During the 1960s and 1970s, there were several Holiday Inn Jr. motels with just 44 to 48 guest rooms and limited amenities. The first such location opened in Camden, Arkansas in 1964.[23] The last hotel to operate under the Holiday Inn Jr. name was in Huntingdon, Pennsylvania, which remained in operation until it burned down in 1979.</p>
+  </div>
+</div>
+<!--End of about us-->
+
+
+
+
+</body>
+</html>
